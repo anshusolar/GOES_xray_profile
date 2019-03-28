@@ -13,13 +13,13 @@ a4=str2double(a3);
 
 time=linspace(0,24,length(a4));
 
-plot(time,a4(:,2))
+plot(time,a4(:,3))
 hold all;
-plot(time,a4(:,5))
+plot(time,a4(:,6))
 legend('long','short')
 title(file, 'Interpreter', 'none','FontSize', 14)
 xlabel('Universal Time (hh.mm)','FontSize', 14);
-ylabel('Frequency (MHz)','FontSize', 14);
+ylabel('Xray Flux (w/m^2)','FontSize', 14);
 
 
-saveas(gcf,strcat(file1,'.png'))
+saveas(gcf,strcat(file,'.png'))
